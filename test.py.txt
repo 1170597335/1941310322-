@@ -1,9 +1,0 @@
-coding = utf-8
-from time import sleep
-from selenium import webdriver
-driverfile_path = r'E:\chromedriver.exe'
-driver = webdriver.Chrome(executable_path=driverfile_path)
-driver.get(r'https://www.baidu.com/')
-driver.find_element_by_link_text('新闻').click()
-sleep(5)
-driver.quit()
